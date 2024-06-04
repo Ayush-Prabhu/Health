@@ -22,6 +22,18 @@
             "text": "How confident are you filling out medical forms by yourself?",
             "type" : "BRIEF",
             "options" : ["Not at all","A little bit","Somewhat","Quite a bit","Extremely"]
+        },
+        {
+            "id":5,
+            "text": "I try to get more information about health as much as possible ",
+            "type" : "TABLE",
+            "options" : ["Never","Rarely","Sometimes","Usually","Always"]
+        },
+        {
+            "id":6,
+            "text": "I am able to find health information that I need ",
+            "type" : "TABLE",
+            "options" : ["Never","Rarely","Sometimes","Usually","Always"]
         }
 
     ]
