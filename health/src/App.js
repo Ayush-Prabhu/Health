@@ -1,23 +1,36 @@
+import Profile from './Profile';
+import Navigation from './Navigation';
+import Footer from './Footer';
+import React, { useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
 
-function App() {
+function App({person}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="profile-page">
+      <Navigation />
+      <ProfilePage />
+      <Footer />
+    </div>
+  );
+}
+
+
+
+const ProfilePage = () => {
+  // Example data for the person's profile
+  const [person] = useState({
+    name: 'John Doe',
+    email: 'john@example.com',
+    age: 30,
+    location: 'New York, USA',
+    avatar: logo, // URL to the person's avatar image
+    // Add more profile information as needed
+  });
+
+  return (
+    <div className="survey-page">
+      <Profile person={person} />
+      {/* Add survey questions and other content here */}
     </div>
   );
 }

@@ -28,6 +28,32 @@
   color: #61dafb;
 }
 
+.profile{
+  height:200px;
+  width:100px;
+}
+
+.navbar{
+  position: sticky;
+  z-index: 1;
+}
+
+.nav-link:hover{
+  background-color: aqua;
+  color: black;
+}
+
+/* .navbar-brand:hover */
+
+.img-thumbnail{
+  width: 100px;
+}
+
+.logo{
+  height: 50px;
+  width: 100px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
