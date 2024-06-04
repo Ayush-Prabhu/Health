@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 
-// Sample questions loaded from a JSON file (questions.json)
 import questions from './Questionnaire.json';
 
 const LikertSurveyForm = () => {
@@ -27,19 +26,18 @@ const LikertSurveyForm = () => {
       <Form onSubmit={handleSubmit}>
         {questions.map((question) => (
           <Form.Group key={question.id}>
-            <Form.Label>{question.text}</Form.Label>
-            <Form.Control
-              as="select"
-              value={userAnswers[question.id] || ''}
-              onChange={(e) => handleAnswerChange(question.id, e.target.value)}
-            >
-              <option value="">Select an option</option>
-              {question.options.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </Form.Control>
+            <Form.Label>{question.id + ". " +question.text}</Form.Label>
+            {question.options.map((option) => (
+              <Form.Check
+                key={option}
+                type="radio"
+                label={option}
+                name={question.id} // Group radio buttons by question ID
+                value={option}
+                checked={userAnswers[question.id] === option}
+                onChange={(e) => handleAnswerChange(question.id, e.target.value)}
+              />
+            ))}
           </Form.Group>
         ))}
         <Button variant="primary" type="submit">

@@ -1,5 +1,4 @@
-{
-    "questions" : [
+[
         {
             "id":1,
             "text": "How often do you have someone help you read hospital materials?",
@@ -22,7 +21,7 @@
             "id":4,
             "text": "How confident are you filling out medical forms by yourself?",
             "type" : "BRIEF",
-            "options" : ["Always","Often","Sometimes","Occasionally","Never"]
+            "options" : ["Not at all","A little bit","Somewhat","Quite a bit","Extremely"]
         }
+
     ]
-}
