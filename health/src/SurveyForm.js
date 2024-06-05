@@ -32,7 +32,7 @@ const SurveyForm = () => {
 
   return (
     <Container>
-      <h1>Likert Scale Survey</h1>
+      <h1>Survey</h1>
       <Form onSubmit={handleSubmit}>
         {questions.map((question) => {
           if (question.type === 'BRIEF') {
