@@ -3,13 +3,13 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import React, { useState } from 'react';
 import logo from './logo.svg';
-import LikertSurveyForm from './LikertSurveyForm';
+import SurveyForm from './SurveyForm';
 
 function App({person}) {
   return (
     <div className="profile-page">
       <Navigation />
-      <LikertSurveyForm />
+      <SurveyForm />
       <Footer />
     </div>
   );
