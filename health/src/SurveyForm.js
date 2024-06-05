@@ -106,6 +106,7 @@ const SurveyForm = () => {
               <div key={question.id}>
                 <Form.Label>{question.id + ". "+question.text}</Form.Label>
                 <Table key={question.id}>
+                <tbody>
                   {question.info.map((row) =>
                   (
                     <tr>
@@ -114,6 +115,7 @@ const SurveyForm = () => {
                       </td>
                     </tr>
                   ))}
+                  </tbody>
                 </Table>
                 <Form.Control
                   type="text"

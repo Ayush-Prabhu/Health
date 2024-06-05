@@ -2,7 +2,7 @@ import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstr
 
 export default function Navigation() {
     return (
-        <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+        <Navbar expand="lg" bg="dark" variant="dark">
             <Container fluid>
                 <Navbar.Brand href="/">
                     <img className='logo' src={require('./manipal.jpg')} alt="" />
